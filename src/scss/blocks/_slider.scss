@@ -1,0 +1,65 @@
+// .slider__wrapper {
+// 	position: relative;
+// 	width: 100%;
+	
+	.main__slider {
+		padding: 100px 23px 0 142px;
+		background: url('../img/main/main_phone.png');
+		position: absolute;
+		width: 435px;
+		right: 0;
+		bottom: 0;
+			.slick-arrow {
+				font-size: 0;
+				bottom: 72px;
+				width: 20px;
+				height: 20px;
+				border: none;
+				cursor: pointer;
+			}
+		 	.slick-prev {
+			position: absolute;
+			left: -61%;
+			background: url('../img/left.svg') 0 0 / 100% no-repeat;
+		 }
+		 	.slick-dots{
+			position: absolute;
+			left: -56%;
+			bottom: 75px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			list-style-type: none;
+			
+			li {
+				margin:0 5px;
+			}
+			button {
+				font-size: 0;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				border-color: #fff;
+				border-width: 1px;
+				background-color: rgba($color: #fff, $alpha: 0);
+				cursor: pointer;
+				transition: 0.5s all;
+				&:hover {
+					background-color: #fff;
+				}
+
+			}
+		 }
+
+		 .slick-next {
+			background: url('../img/right.svg') 0 0 / 100% no-repeat;
+			position: absolute;
+			left: -27.5%;
+		 }
+		
+		
+	
+	}
+// }
+	

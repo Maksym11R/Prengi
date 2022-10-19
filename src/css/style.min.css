@@ -1,3 +1,25 @@
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -220,6 +242,7 @@
   align-items: center;
 }
 .with__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,6 +265,18 @@
   font-size: 18px;
   font-weight: 700;
   color: #393939;
+}
+.with__item-img2 {
+  position: absolute;
+  right: -26px;
+  bottom: -34px;
+  opacity: 0.1;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .with__arrow {
   position: absolute;

@@ -6,6 +6,7 @@
 		align-items: center;
 	}
 	&__item {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -16,8 +17,6 @@
 		border-width: 1px;
 		border-color: #ececec ;
 		text-align: center;
-		&-img {
-		}
 		&-text {
 			margin: 0 45px 20px 45px;
 			font-size: 18px;
@@ -29,6 +28,15 @@
 			font-size: 18px;
 			font-weight: 700;
 			color: #393939;
+		}
+		&-img2 {
+			position: absolute;
+			right: -26px;
+			bottom: -34px;
+			opacity: 0.1;
+			animation-name: opacity;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
 		}
 	}
 	&__arrow {

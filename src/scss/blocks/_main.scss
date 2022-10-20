@@ -25,6 +25,9 @@
 			text-transform: uppercase;
 			color: #ffffff;
 			text-decoration: none;
+			&:hover {
+				color: #00c2f0;
+			}
 		}
 	}
 	&__title {

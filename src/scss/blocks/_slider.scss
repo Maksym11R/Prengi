@@ -9,6 +9,10 @@
 		width: 435px;
 		right: 0;
 		bottom: 0;
+			.slick-list {
+				overflow: hidden;
+			}
+			
 			.slick-arrow {
 				font-size: 0;
 				bottom: 72px;
@@ -34,6 +38,7 @@
 			
 			li {
 				margin:0 5px;
+				
 			}
 			button {
 				font-size: 0;
@@ -48,9 +53,10 @@
 				&:hover {
 					background-color: #fff;
 				}
-
 			}
 		 }
+		 
+		 
 
 		 .slick-next {
 			background: url('../img/right.svg') 0 0 / 100% no-repeat;

@@ -130,6 +130,9 @@
   color: #ffffff;
   text-decoration: none;
 }
+.main__menu a:hover {
+  color: #00c2f0;
+}
 .main__title {
   margin-top: 109px;
   font-size: 42px;
@@ -186,6 +189,9 @@
   width: 435px;
   right: 0;
   bottom: 0;
+}
+.main__slider .slick-list {
+  overflow: hidden;
 }
 .main__slider .slick-arrow {
   font-size: 0;
@@ -298,4 +304,147 @@
   font-weight: 700;
   color: #393939;
   text-align: center;
+}
+
+.prengi {
+  padding: 80px 0 80px;
+  background: url("../img/woman/woman_bg.jpg") center center/cover no-repeat;
+}
+.prengi__title {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.prengi__slider {
+  padding: 126px 222px 50px 223px;
+  position: relative;
+  background: url("../img/woman/woman_mac.png") center 100% no-repeat;
+  height: 650px;
+}
+.prengi__slider .slick-dots {
+  margin-top: 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 850px;
+  height: 50px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  padding: 0 8px 0 25px;
+}
+.prengi__slider .slick-dots li {
+  width: 100px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+}
+.prengi__slider .slick-dots li:hover {
+  font-size: 13px;
+  font-weight: 700;
+  color: #00c2f0;
+}
+.prengi__slider .slick-dots li::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  content: "Prengi Production";
+  width: 113px;
+}
+.prengi__slider .slick-dots li:nth-child(2)::before {
+  position: absolute;
+  top: -16px;
+  padding: 0 27px;
+  content: "Prengi FMC";
+  width: 75px;
+  border-left: dotted;
+  border-right: dotted;
+  border-width: 1px;
+  border-color: #ffffff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prengi__slider .slick-dots li:nth-child(3)::before {
+  position: absolute;
+  top: -16px;
+  padding-right: 14px;
+  content: "Prengi Mallz Retail";
+  width: 119px;
+  border-right: dotted;
+  border-width: 1px;
+  border-color: #ffffff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prengi__slider .slick-dots li:nth-child(4)::before {
+  position: absolute;
+  top: -16px;
+  padding-right: 15px;
+  content: "Prengi Logistic";
+  width: 110px;
+  border-right: dotted;
+  border-width: 1px;
+  border-color: #ffffff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prengi__slider .slick-dots li:nth-child(5)::before {
+  position: absolute;
+  top: -16px;
+  padding-right: 20px;
+  content: "Prengi IT";
+  width: 75px;
+  border-right: dotted;
+  border-width: 1px;
+  border-color: #ffffff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prengi__slider .slick-dots li:nth-child(6)::before {
+  content: "Prengi HR";
+  width: 75px;
+}
+.prengi__slider .slick-dots button {
+  border: none;
+  background: none;
+  font-size: 0;
+}
+.prengi .slick-arrow {
+  font-size: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+.prengi .slick-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: url("../img/woman/left1.svg") 0 0 no-repeat;
+}
+.prengi .slick-next {
+  position: absolute;
+  background: url("../img/woman/right1.svg") 0 0 no-repeat;
+  right: 0;
+  top: 50%;
+}
+.prengi .slick-slide {
+  margin: 0;
 }

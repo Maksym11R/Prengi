@@ -1,0 +1,80 @@
+.variant {
+	position: relative;
+	min-height: 585px;
+	&__title {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 75px;
+		text-align: center;
+		font-size: 30px;
+		line-height: 35px;
+		font-weight: 700;
+		color: #ffffff;
+	}
+	&__bg {
+		display: flex;
+		&-1 {
+			padding-right: 45px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			 background: url('../img/section3/cloud.jpg') center center / cover no-repeat;
+			 height: 585px;
+			 width: 50%;
+			 
+		}
+		&-2 {
+			padding-left: 45px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background: url('../img/section3/server.jpg') center center / cover no-repeat;
+			 height: 585px;
+			 width: 50%;
+			 animation-name: backanimate;
+			 animation-duration: 15s;
+			 animation-iteration-count: infinite;
+		}
+	}
+	&__item {
+		position: relative;
+		width: 525px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: end;
+		&-title {
+			padding: 0 37px;
+			font-size: 30px;
+			line-height: 22px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #ffffff;
+			z-index: 1;
+		}
+		&-text {
+			padding: 0 37px;
+			margin-top: 15px;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 300;
+			color: #ffffff;
+			z-index: 1;
+		}
+		&-block {
+			position: absolute;
+			right: 0;
+			width: 167px;
+			height: 167px;
+			background-color: rgba($color: #00c2f0, $alpha: 0.3);
+			
+		}
+	}
+	&__item2 {
+		text-align: start;
+		&-block{
+			left: 0;
+		}
+	}
+}

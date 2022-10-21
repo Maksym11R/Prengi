@@ -20,6 +20,70 @@
     opacity: 0.1;
   }
 }
+@-webkit-keyframes backanimate {
+  from {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  20% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  40% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  60% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  80% {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  to {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+}
+@keyframes backanimate {
+  from {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  20% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  40% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  60% {
+    background: url("../img/section3/server2.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  80% {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+  to {
+    background: url("../img/section3/server.jpg") center center/cover no-repeat;
+    height: 585px;
+    width: 50%;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -432,6 +496,7 @@
   border: none;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 .prengi .slick-prev {
   position: absolute;
@@ -447,4 +512,227 @@
 }
 .prengi .slick-slide {
   margin: 0;
+}
+
+.benefits {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 80px 0;
+}
+.benefits__title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #393939;
+}
+.benefits__wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits__item {
+  position: relative;
+  width: 570px;
+  height: 355px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits__item-text {
+  padding: 0 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 23px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.benefits__item1 {
+  background: url("../img/benefits/benefits_clock.jpg") 0 0 no-repeat;
+}
+.benefits__item2 {
+  background: url("../img/benefits/beneits_robohand.jpg") 0 0 no-repeat;
+}
+.benefits__item3 {
+  background: url("../img/benefits/beneits_globus.png") 0 0 no-repeat;
+}
+.benefits__item4 {
+  background: url("../img/benefits/beneits_phone.jpg") 0 0 no-repeat;
+}
+.benefits__item5 {
+  background: url("../img/benefits/beneits_man.png") 0 0 no-repeat;
+}
+.benefits__item6 {
+  background: url("../img/benefits/beneits_card.jpg") 0 0 no-repeat;
+}
+
+.variant {
+  position: relative;
+  min-height: 585px;
+}
+.variant__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 75px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.variant__bg {
+  display: flex;
+}
+.variant__bg-1 {
+  padding-right: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../img/section3/cloud.jpg") center center/cover no-repeat;
+  height: 585px;
+  width: 50%;
+}
+.variant__bg-2 {
+  padding-left: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("../img/section3/server.jpg") center center/cover no-repeat;
+  height: 585px;
+  width: 50%;
+  -webkit-animation-name: backanimate;
+          animation-name: backanimate;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.variant__item {
+  position: relative;
+  width: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+}
+.variant__item-title {
+  padding: 0 37px;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+}
+.variant__item-text {
+  padding: 0 37px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #ffffff;
+  z-index: 1;
+}
+.variant__item-block {
+  position: absolute;
+  right: 0;
+  width: 167px;
+  height: 167px;
+  background-color: rgba(0, 194, 240, 0.3);
+}
+.variant__item2 {
+  text-align: start;
+}
+.variant__item2-block {
+  left: 0;
+}
+
+.simple {
+  padding: 80px 0;
+  text-align: center;
+}
+.simple__block {
+  width: 290px;
+  margin: 0 auto;
+  border: solid;
+  border-width: 1px;
+  border-color: #00c2f0;
+}
+.simple__title {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #393939;
+}
+.simple__button {
+  margin-top: 35px;
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #068cae;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__block {
+  margin-right: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__block-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer__block-img {
+  margin-top: 20px;
+}
+.footer__block-text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.footer__block-list {
+  list-style: none;
+}
+.footer__block-list li {
+  margin-top: 4px;
+}
+.footer__block-list li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__block-list li a:hover {
+  text-decoration: underline;
+}
+.footer__block1 {
+  width: 380px;
+}
+.footer__divider {
+  margin-top: 45px;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.footer__rights {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #ffffff;
 }

@@ -10,3 +10,36 @@
 	}
 	
 }
+
+@keyframes backanimate {
+	from {
+		background: url('../img/section3/server.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+	20% {
+		background: url('../img/section3/server2.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+	40% {
+		background: url('../img/section3/server2.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+	60% {
+		background: url('../img/section3/server2.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+	80% {
+		background: url('../img/section3/server.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+	to {
+		background: url('../img/section3/server.jpg') center center / cover no-repeat;
+		height: 585px;
+		width: 50%;
+	}
+}

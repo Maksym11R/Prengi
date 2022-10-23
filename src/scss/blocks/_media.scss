@@ -1,0 +1,72 @@
+@media (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.header {
+		&__item {
+			&-text {
+				font-size: 10px;
+				&:hover {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.main {
+		&__logo {
+			margin-left: 30px;
+			img {
+				width: 180px;
+			}
+		}
+		&__menu {
+			margin-right: 30px;
+		}
+		&__title {
+			margin-left: 30px;
+			font-size: 39px;
+		}
+		&__subtitle {
+			margin-left: 30px;
+		}
+		&_button {
+			margin-left: 140px;
+			margin-top: 100px;
+
+		}
+	}
+	.main__slider {
+		right: 30px;
+	}
+	.with {
+		&__item {
+			width: 309px;
+		}
+	}
+	.prengi {
+		&__slider {
+			padding: 126px 131px 50px 133px;
+		}
+	}
+
+	.benefits {
+		&__wrapper {
+			justify-content: center;
+		}
+		&__item {
+			width: 450px;
+			height: 320px;
+		}
+	}
+
+	.variant {
+		&__item {
+			&-title {
+				font-size: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	
+}

@@ -15,22 +15,25 @@
 	&__bg {
 		display: flex;
 		&-1 {
-			padding-right: 45px;
+			position: absolute;
+			// padding-right: 45px;
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
 			 background: url('../img/section3/cloud.jpg') center center / cover no-repeat;
-			 height: 585px;
+			 height: 100%;
 			 width: 50%;
 			 
 		}
 		&-2 {
-			padding-left: 45px;
+			position: absolute;
+			right: 0%;
+			// padding-left: 45px;
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
 			background: url('../img/section3/server.jpg') center center / cover no-repeat;
-			 height: 585px;
+			 height: 100%;
 			 width: 50%;
 			 animation-name: backanimate;
 			 animation-duration: 15s;
@@ -38,8 +41,9 @@
 		}
 	}
 	&__item {
+		margin-right: 45px;
 		position: relative;
-		width: 525px;
+		max-width: 525px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -72,6 +76,7 @@
 		}
 	}
 	&__item2 {
+		margin-left: 45px;
 		text-align: start;
 		&-block{
 			left: 0;

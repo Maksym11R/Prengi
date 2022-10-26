@@ -22,3 +22,21 @@ $(document).ready(function () {
 
 		});
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+	const menu = document.querySelector('.main__menu'),
+		menuItem = document.querySelectorAll('.main__menu-item'),
+		hamburger = document.querySelector('.burger');
+
+	hamburger.addEventListener('click', () => {
+		hamburger.classList.toggle('burger_active');
+		menu.classList.toggle('main__menu_active');
+	});
+
+	menuItem.forEach(item => {
+		item.addEventListener('click', () => {
+			hamburger.classList.toggle('burger_active');
+			menu.classList.toggle('main__menu_active');
+		});
+	});
+});

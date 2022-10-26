@@ -2,7 +2,7 @@
 	position: relative;
 	height: 700px;
 	background: url('../img/main/main_bg.jpg') center center / cover no-repeat; 
-	nav {
+	&__nav {
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -60,6 +60,8 @@
 		transform: translateX(-88%);
 		
 	}
-	
+	.burger {
+		display: none;
+	}
 	
 }

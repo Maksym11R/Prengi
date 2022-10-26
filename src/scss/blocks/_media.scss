@@ -68,5 +68,290 @@
 	}
 }
 @media (max-width: 991px) {
-	
+	.container {
+		width: 720px;
+	}
+	.header {
+		display: none;
+	}
+	.main {
+		&__logo {
+			img {
+				width: 170px;
+			}
+		}
+		&__nav {
+			display: flex;
+			justify-content: flex-start;
+		}
+		&__menu {
+			margin-left: 220px;
+			width: 100%;
+		}
+		&__title {
+			margin-left: 0;
+			font-size: 27px;
+			line-height: 31px;
+		}
+		&__subtitle {
+			margin-left: 0;
+			font-size: 24px;
+		}
+		&__slider {
+			right: -15px;
+		}
+		&_button {
+			margin: 100px 0 0 0;
+		}
+	}
+	.with {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&__item {
+			&:last-child {
+				margin: 50px auto 0;
+			}
+		}
+		&__arrow {
+			top: 40%;
+		}
+	}
+	.prengi {
+		&__slider {
+			background: none;
+		}
+		.slick-dots {
+			width: 710px;
+			li{
+				&::before {
+					width: 140px;
+				}
+				&:nth-child(3) {
+					&::before {
+						width: 75px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+	.main {
+		min-height: 1150px;
+		&__logo {
+			position: relative;
+			width: 100%;
+			margin-left: 190px;
+
+			img {
+				width: 170px;
+			}
+		}	
+		&__title {
+			margin-top: 40px;
+			position: relative;
+			text-align: center;
+		}	
+		&__subtitle {
+			position: relative;
+			text-align: center;
+		}
+		&_button {
+			margin: 60px 30% 0;
+		}
+		
+		&__menu {
+			position: fixed;
+			width: 50%;
+			height: 100%;
+			left: -100%;
+			margin: 0;
+			background-color: rgba($color: #00c2f0, $alpha: 0.9);
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+			transition: 0.6s all;
+			&-item {
+				margin-top: 60px;
+				a {
+					font-size: 20px;
+				}
+			}
+			&_active {
+				left: 0%;
+			}
+		}
+		.burger {
+			position: fixed;
+			margin-top: 10px;
+			display: block;
+			right: 25px;
+			top: 10px;
+			width: 25px;
+			height: 12px;
+			z-index: 100;
+			span {
+				display: block;
+				height: 2px;
+				width: 100%;
+				background-color: #00c2f0;
+				margin-bottom: 6px;
+				transition: 0.7s all;
+			}
+			&_active {
+				position: fixed;
+				span {
+					margin-bottom: -2px;
+					&:nth-child(1) {
+						transform: rotate(-45deg);
+					}
+					&:nth-child(2) {
+						display: none;
+					}
+					&:nth-child(3) {
+						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+		.main__slider {
+			margin: 60px auto;
+			padding: 100px 23px 0 142px;
+			position: relative;
+			width: 435px;
+			.slick-dots {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: -9.5%;
+			}
+			.slick-next {
+				position: absolute;
+				left: 66%;
+				bottom: -10%;
+			}
+			.slick-prev {
+				position: absolute;
+				left: 30%;
+				bottom: -10%;
+
+				
+			}
+		}
+	}
+	.with {
+		&__item {
+			margin: 50px auto 0;
+		}
+	}
+	.prengi {
+		&__slider {
+			margin-top: 40px;
+			padding: 0 100px;
+			height: auto;
+			.slick-dots {
+				width: 100px;
+				display: none;
+				border: none;
+				li {
+					display: none;
+					a{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		&__block {
+			&:last-child {
+				position: absolute;
+				bottom: 105px;
+				right: -70px;
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.container {
+		width: 100%;
+	}
+	.main {
+		min-height:950px;
+		&__logo {
+			margin: 0;
+		  position: absolute;
+		  left: 50%;
+		  transform: translateX(-50%);
+			img 	{
+				margin: 0;
+				}
+		}
+		&__title {
+			margin-top: 100px;
+		}
+		&__subtitle {
+			font-size: 15px;
+		}
+		&_button {
+			display: inline;
+			position: relative;
+			margin: 100px 15% 0;
+		}
+		.main__slider {
+			padding: 0;
+			margin: 30px auto 0;
+			background: none;
+			width: 100%;
+			.slick-slide {
+				text-align: center;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			.slick-next {
+				display: none;
+				background: none;
+			}
+			.slick-prev{
+				display: none;
+				background: none;
+			}
+			.slick-dots {
+				display: none;
+				font-size: 0;
+				border: none;
+				li {
+					display: none;
+				}
+			}
+		}
+	}
+	.prengi {
+		display: none;
+	}
+	.variant {
+		&__item {
+			margin-right: 10px;
+		}
+		&__item2 {
+			margin-left: 10px;
+		}
+	}
+	.footer {
+		&__block {
+			display: none;
+		}
+		&__block1 {
+			margin-left: 10%;
+			display: flex;
+		}
+	}
 }
